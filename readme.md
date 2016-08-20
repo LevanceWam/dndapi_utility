@@ -4,7 +4,7 @@
 
 ``` javascript
 
-npm install dndapi_test
+npm install dndapi_test --save
 
 ```
 
