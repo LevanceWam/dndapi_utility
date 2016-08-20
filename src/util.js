@@ -14,6 +14,6 @@ exports.debug = (title, obj) => {
   if (process.env.DEBUG) {
       // Display the output on terminal
       console.log(outputTerminal);
-    });
+    };
   }
 };
