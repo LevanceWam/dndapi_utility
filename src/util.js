@@ -16,6 +16,5 @@ exports.debug = (title, obj) => {
       if (err) throw err;
       // Display the output on terminal
       console.log(outputTerminal);
-    });
   }
 };
