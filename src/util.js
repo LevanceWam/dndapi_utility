@@ -15,5 +15,4 @@ exports.debug = (title, obj) => {
       // Display the output on terminal
       console.log(outputTerminal);
     };
-  }
 };
