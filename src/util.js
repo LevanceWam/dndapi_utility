@@ -12,9 +12,8 @@ exports.debug = (title, obj) => {
 
   // If the DEBUG environmental variable exits
   if (process.env.DEBUG) {
-      // If there is an error throw it
-      if (err) throw err;
       // Display the output on terminal
       console.log(outputTerminal);
+    });
   }
 };
