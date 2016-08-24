@@ -1,3 +1,4 @@
+[ ![Codeship Status for kjrohr/dndapi_utility](https://codeship.com/projects/5bea2bc0-4bd1-0134-ca2b-625b98bf20ca/status?branch=master)](https://codeship.com/projects/170025)
 # dndapi Utility Tool
 
 ## Installation
