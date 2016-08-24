@@ -12,6 +12,8 @@
     "terminal-colors": "^0.1.4"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "expect": "^1.20.2",
     "mocha": "^3.0.2"
   }
 }
