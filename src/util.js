@@ -14,5 +14,31 @@ exports.debug = (title, obj) => {
   if (process.env.DEBUG) {
       // Display the output on terminal
       console.log(outputTerminal);
-    };
+  }
+};
+
+exports.dndBumper = (version, bump) => {
+  let major;
+  let minor;
+  let patch;
+
+  console.log(version);
+  console.log(bump);
+
+  const bumper = [];
+  for (let i = 0; i < version.length; i++) {
+    if (version[i] === '.') {
+      bumper.push(i);
+    }
+  }
+
+  major = version.substring(bumper[1] + 1,
+  version.length);
+
+  minor = version.substring(bumper[1] + 1,
+  version.length);
+
+  patch = version.substring(bumper[1] + 1,
+  version.length);
+
 };
