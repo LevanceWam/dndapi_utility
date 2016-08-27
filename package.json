@@ -1,0 +1,19 @@
+{
+  "name": "dndapi_test",
+  "version": "1.1.8",
+  "description": "",
+  "main": "src/util.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "terminal-colors": "^0.1.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.0.2"
+  }
+}
