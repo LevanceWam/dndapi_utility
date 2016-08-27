@@ -32,13 +32,29 @@ exports.dndBumper = (version, bump) => {
     }
   }
 
-  major = version.substring(bumper[1] + 1,
-  version.length);
+  if (bump === 'major') {
+    major++;
+    minor = 0;
+    patch = 0;
+  } else if (bump === 'minor') {
+    minor++;
+    patch = 0;
+  } else if (bump === 'patch') {
+    patch++;
+  } else {
+    console.log('Nothing Was Updated');
+  }
 
-  minor = version.substring(bumper[1] + 1,
-  version.length);
+
+  major = version.substring(bumper[0],
+  bumper[0] - version.length);
+
+  minor = version.substring(bumper[0] + 1,
+  bumper[1]);
 
   patch = version.substring(bumper[1] + 1,
   version.length);
 
+  version = major + '.' + minor + '.' + patch;
+  console.log('Updated version to: ' + version);
 };
