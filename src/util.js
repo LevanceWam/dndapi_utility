@@ -33,13 +33,16 @@ exports.dndBumper = (version, bump) => {
   }
 
   if (bump === 'major') {
+    // If the user calls for major it will bump up it one.
     major++;
     minor = 0;
     patch = 0;
   } else if (bump === 'minor') {
+    // If the user calls for minor it will bump up it one.
     minor++;
     patch = 0;
   } else if (bump === 'patch') {
+    // If the user calls for patch it will bump up it one.
     patch++;
   } else {
     console.log('Nothing Was Updated');
