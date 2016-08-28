@@ -32,6 +32,12 @@ exports.dndBumper = (version, bump) => {
     }
   }
 
+  major = version.substring(bumper[0], bumper[0] - version.length);
+
+  minor = version.substring(bumper[0] + 1, bumper[1]);
+
+  patch = version.substring(bumper[1] + 1, version.length);
+
   if (bump === 'major') {
     // If the user calls for major it will bump up it one.
     major++;
@@ -47,16 +53,6 @@ exports.dndBumper = (version, bump) => {
   } else {
     console.log('Nothing Was Updated');
   }
-
-
-  major = version.substring(bumper[0],
-  bumper[0] - version.length);
-
-  minor = version.substring(bumper[0] + 1,
-  bumper[1]);
-
-  patch = version.substring(bumper[1] + 1,
-  version.length);
 
   version = major + '.' + minor + '.' + patch;
   console.log('Updated version to: ' + version);
